@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: eef2f7;
+    background-color: #1f1d2c;
+}
+
+a {
+    color: currentColor;
+    text-decoration-color: #eef2f7;
+    text-decoration-thickness: 2px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0;
+}
+
+button[class*="btn"] {
+    cursor: pointer;
+    padding: 0 12px;
+    font-family: 'Secular One', sans-serif;
+}
+
+button[class*="btn"]:hover {
+	opacity: 0.8;
+}
+
+button[class*="btn"]:focus {
+	outline: 0;
+}
+
+/* NAVBAR */
+
+.top-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    height: 60px;
+    padding: 16px 40px;
+    border-bottom: 2px solid #eef2f7;
+    box-shadow: 0 0 20px #eef2f7;
+}
+
+    .top-nav-item {
+        flex: 1;
+        margin: 0 30px;
+        /* border: 2px solid red; */
+    }
+
+    .top-nav-logo {
+        font-family: 'Coolvetica', sans-serif;
+        font-size: 1.625rem;
+        font-weight: 700;
+    }
+
+        .top-nav-logo a {
+            display: block;
+            padding: 0 20px;
+            width: fit-content;
+        }
+
+        .top-nav-logo h1 {
+            color: #eef2f7;
+            font-family: inherit;
+            font-style: italic;
+        }
+
+    .top-nav-search-bar {
+
+    }
+
+        .top-nav-search-bar form {
+            height: 100%;
+        }
+
+        .top-nav-search-bar input {
+            font-family: 'Secular One', sans-serif;
+            font-size: 0.875em;
+            font-style: italic;
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            border-radius: 6px;
+            padding: 2px 6px 2px 6px;
+            color: #eef2f7;
+            background-color: #363342;
+            border: 0;
+        }
+
+        .top-nav-search-bar input:focus {
+            outline: 0;
+            border: 0;
+        }
+
+    .top-nav-btns {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+    }
+
+        .top-nav-btn {
+            margin: 0 20px;
+        }
+
+/* STYLING BUTTONS */
+
+.btn-light {
+    color: #363342;
+    background-color: #eef2f7;
+    border: 2px solid #eef2f7;
+    border-radius: 6px;
+}
+
+.btn-dark {
+    color: #eef2f7;
+    background-color: #363342;
+    border: 2px solid #eef2f7;
+    border-radius: 6px;
+}
+
+/* MEDIA QUERIES */
+
